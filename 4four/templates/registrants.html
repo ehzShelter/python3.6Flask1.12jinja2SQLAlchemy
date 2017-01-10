@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+registrants
+{% endblock %}
+
+
+{% block body %}
+
+<ul>
+  {% for registrant in registrants %}
+  <li> {{registrant.name}} from {{registrant.dorm}} </li>
+  {% endfor %}
+</ul>
+
+{% endblock %}
+
+
+
